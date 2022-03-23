@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(146, 180, 209);
+    font-family: poppins, sans-serif;
+
+}
+.global{
+    display: flex;
+}
+.geral{
+    display: flex; 
+    width: 100%;
+}
+.conteudo-geral{
+    width: 100%;
+}
+h2{
+    font-size: 15px;
+}
+
+.nav-side-bar{
+    width: 3%;
+    background-color: rgb(34, 22, 80);
+    overflow: hidden;
+    white-space: nowrap;
+    transition: .3s ease;
+}
+.nav-side-bar:hover{
+    width: 13%;
+}
+.nav-side-bar li{
+    padding: 10px;
+    color: white;
+}
+.nav-side-bar li:hover{
+    cursor: pointer;
+    background-color: rgba(172, 255, 47, 0.473);
+    transition: .2s ease-in-out;
+    
+}
+.nav-side-bar li .far{
+    color: white;
+    width: 35px;
+}
+.nav-side-bar .far{
+    margin-right: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.side-icon-top{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.ativo{
+    background-color: greenyellow;
+    color: black;
+}
+
+/*CONTEUDO*/
+
+.cabecalho{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+   
+}
+/* notificaçao*/
+.convite{
+    border-bottom: 1px solid black;
+    height: 30px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.convite h2{
+    color: rgb(73, 73, 73);
+    font-size: 8px;
+}
+.convite .fa-times{
+    color: black;
+    margin-left: 10px;
+}
+.friends{
+    background-color: rgb(153, 153, 153);
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    right: 8%;
+    top:10%;
+    border: none;
+    display: none;
+    
+}
+.amigos{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 10px;
+    align-items: center;
+}
+.friends p{
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+}
+.amigos:hover{
+    cursor: pointer;
+    background-color: darkgray;
+    color: black;
+}
+.cabecalho h1{
+    color: darkgray;
+    margin-left: 40px ;
+}
+.amigos button{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.amigos button:hover{
+    background-color: blue;
+    color: white;
+}
+.bloco-not{
+    position: absolute;
+    top: 7%;
+    right: 8%;
+    width: 200px;
+    height: 150px;
+    background-color: rgba(24, 24, 24, 0.913);
+    border-radius: 10px;
+    display: none;
+}
+.top-notifica{
+    color: white;
+}
+.mensa{
+    padding: 5px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.521);
+    margin: 5px;
+    font-size: 10px;
+    text-align: start;
+    border-radius: 10px;
+}
+.configurar{ 
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    top:10%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: none;
+   
+}
+.configs{
+    font-size: 12px !important;
+    display: flex;
+    margin: 10px;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: darkgray;
+}
+.sair:hover{
+    cursor: pointer;
+}
+/* ------  */
+.usuario{
+    margin-right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.usuario i{
+    margin-right: 15px;
+    font-size: 20px ;
+    color: darkgray;
+}
+.foto-perfil{
+    border-radius: 50%;
+}
+.but-not{
+    background-color: orange;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 10px !important;
+}
+.conteudo{
+    padding: 10px;
+
+}
+.caixas{
+    display: flex;
+    flex-direction: row;
+}
+.caixa{
+    width: 33%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.caixa1{
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+.caixas2{
+    display: flex;
+}
+.caixas2 h2{
+    font-size: 10px;
+}
+.caixas2 p{
+    font-size: 8px;
+    margin: 5px
+}
+.sub-caixa{
+    border-top:1px solid black;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.subt2 p{
+    color: red;
+}
+/* CAIXA BLOCOS*/
+
+.caixas3{
+    display: flex;
+    margin-bottom: 5%;
+}
+.bloco1{
+    width: 50%;
+    background-color: white;
+    margin: 5px 20px;
+    padding: 10px;
+}
+.head-bloco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    border-bottom: 1px solid black;
+}
+.head-bloco h2{
+    color: darkgray;
+    font-size: 15px;
+    margin-bottom: 10px;
+    
+}
+.linhas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+    height: 37px;
+}
+.linhas h2{
+    font-size: 12px;
+}
+.sub-p{
+    margin-right: auto;
+    margin-left: 10px;
+}
+.linhas button{
+    border: none;
+    padding: 5px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    color: white;
+    height: 20px;
+}
+.butt-p{
+    font-size: 11px !important;
+} 
+.lin1{
+    background-color: red;
+}
+.lin2{
+    background-color: yellow;
+}
+.lin3{
+    background-color: green;
+}
+.lin4{
+    background-color: grey;
+}

@@ -21,8 +21,7 @@
 }
 .caixa-01{
     padding: 10px;
-    width: 40%;
-    height: 350px;
+    width: 100%;
     background-color: white;
 }
 .mundo{
@@ -32,9 +31,8 @@
 }
 /* caixa 2*/
 .caixa-02{
-    width: 60%;
+    width: 100%;
     background-color: white;
-    height: 350px;
     padding: 10px;
 }
 .sale{
@@ -109,7 +107,7 @@
     display: flex;
 }
 .caixa-grafico{
-    width: 33%;
+    width: 100%;
     background: white;
     margin: 20px;
 }
@@ -129,6 +127,7 @@
     align-items: center;
     border-top: 1px solid #dfdcdc;
     border-bottom: 1px solid #dfdcdc;
+    margin-top: 2%;
 }
 .texto-bottom p{
     margin-left: 10px;
@@ -175,6 +174,15 @@
     align-items: center;
     margin: auto;
 }
+.stb-1 i{
+    color: #ff4500;
+}
+.stb-2 i{
+    color: #378af7;
+}
+.stb-3 i{
+    color: #04c304;
+}
 .grupo-linha{
     width: 100%;
     padding: 10px;
@@ -182,8 +190,119 @@
 }
 .sub-g-linha{
     width: 33%;
+    margin: 0px 20px;
 }
 .sub-g-linha p{
     font-weight: 500;
     color: darkgrey;
+}
+.color-linha-01{
+    height: 15px;
+    border-radius: 15px;
+    box-shadow:inset 0px -1px 2px 1px #7c7878;
+    background-color: #ff4500;
+    width: 39%;
+}
+.color-linha-02{
+    height: 15px;
+    border-radius: 15px;
+    box-shadow:inset 0px -1px 2px 1px #7c7878;
+    background-color: #378af7;
+    width: 54%;
+}
+.color-linha-03{
+    height: 15px;
+    border-radius: 15px;
+    box-shadow:inset 0px -1px 2px 1px #7c7878;
+    background-color: #04c304;
+    width: 54%;
+}
+/*grafico 3*/
+
+.coluna-texto{
+    margin-top: 2%;
+}
+.agencias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(197, 195, 195);
+    height: 50px;
+}
+.agencias h2{
+    margin-right: auto;
+    margin-left: 1%;
+}
+.agencias p{
+    margin-right: 10%;
+}
+.agencias h5{
+    margin-right: 5%;
+}
+.agencias i{
+    margin-left: 2%;
+}
+.ag-1 i{
+    color: #ff0000;
+}
+.ag-2 i{
+    color: #adff2f;
+}
+.ag-3 i{
+    color: greenyellow;
+}
+.ag-1 h5{
+    color: red;
+}
+.ag-2 h5{
+    color: yellowgreen;
+}
+.ag-3 h5{
+    color: yellowgreen;
+}
+
+/*chats*/
+
+#bar-chart{
+    width: 100% !important;
+    height: 50% !important;
+}
+#pie-chart{
+    width: 100% !important;
+    height: 50% !important;
+}
+#myChart{
+    width: 100% !important;
+    height: 50% !important;
+}
+/*Responsividade*/
+@media (max-width:1490px){
+    .caixa-grafico{
+        height: 100%;
+    }
+}
+@media (max-width:1390px){
+    .nav-side-bar{
+        position: fixed;
+        min-width: 160px;
+    }
+    .menu-respon-geral{
+        display: block;
+    }
+}
+@media (max-width:1035px){
+    .graficos-geral{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:700px){
+    .caixas3{
+     flex-wrap: wrap;  
+    }
+}
+@media(max-width:390px){
+    .num-box p{
+     font-size: 11px;  
+    }
 }

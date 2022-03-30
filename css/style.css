@@ -4,317 +4,257 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
+    list-style: none;
 }
 body{
-    background-color: rgb(204 211 211);
-    font-family: poppins, sans-serif;
-
-}
-.global{
-    display: flex;
+    background-color: #e2e6e7;
+    font-family: 'Poppins', sans-serif;
 }
 .geral{
-    display: flex; 
+    display: flex;
     width: 100%;
+    position: relative;
 }
 .conteudo-geral{
     width: 100%;
+    height: 100vh;
 }
-h2{
-    font-size: 15px;
+.sub-conteudo-1{
+    padding: 20px;
+    display: flex;
 }
+.sub-conteudo-2{
+    padding: 20px;
+    display: flex;
+}
+.sub-conteudo-3{
+    display: flex;
+    padding: 20px;
+}
+/*BARRA DE NAVEGAÇAO*/
 
-.nav-side-bar{
+.bar-navegacao{
     width: 3%;
-    background-color: rgb(34, 22, 80);
+    background-color: #354052;
     overflow: hidden;
     white-space: nowrap;
-    transition: .3s ease;
 }
-.nav-side-bar:hover{
-    width: 13%;
+.bar-navegacao:hover{
+    width: 15%;
 }
-.nav-side-bar li{
+.bar-navegacao li{
     padding: 10px;
     color: white;
 }
-.nav-side-bar li:hover{
+.bar-navegacao li:hover{
     cursor: pointer;
-    background-color: rgba(172, 255, 47, 0.473);
-    transition: .2s ease-in-out;
-    
+    background-color: #01b400;
+    transition: .3s ease-in-out;    
 }
-.nav-side-bar li .far{
-    color: white;
-    width: 35px;
-}
-.nav-side-bar .far{
-    margin-right: 10px;
+.bar-navegacao .far{
     font-size: 15px;
     text-align: center;
+    margin-right: 15px;
+    width: 35px;
     
 }
-.side-icon-top{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 15px;
+.bar-navegacao .lista-top{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
 }
 .ativo{
-    background-color: greenyellow;
-    color: black;
+    background-color: #01b400;
 }
+/*MENU RESPONSIVO*/
 
-/*CONTEUDO*/
+.fa-times{
+    display: none;
+}
+.fa-bars{
+    display: none;
+}
+/*CONTEUDO SITE*/
 
 .cabecalho{
     display: flex;
-    width: 100%;
     height: 60px;
-    background-color: white;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-   
-}
-/* notificaçao*/
-.convite{
-    border-bottom: 1px solid black;
-    height: 30px;
-    border-radius: 10px 10px 0px 0px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
-.convite h2{
-    color: rgb(73, 73, 73);
-    font-size: 8px;
-}
-.convite .fa-times{
-    color: black;
-    margin-left: 10px;
-}
-.friends{
-    background-color: rgb(153, 153, 153);
-    height: 150px;
-    width: 250px;
-    border-radius: 10px;
-    position: absolute;
-    right: 8%;
-    top:10%;
-    border: none;
-    display: none;
-    
-}
-.amigos{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px 10px 10px;
-    align-items: center;
-}
-.friends p{
-    font-size: 10px;
-    color: rgb(0, 0, 0);
-    margin-right: 20px;
-}
-.amigos:hover{
-    cursor: pointer;
-    background-color: darkgray;
-    color: black;
+    background-color: #ffffff;
 }
 .cabecalho h1{
-    color: darkgray;
-    margin-left: 40px ;
+    margin-left: 5%;
+    color: #5e5e68;
 }
-.amigos button{
-    border: none;
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    cursor: pointer;
-    
-}
-.amigos button:hover{
-    background-color: blue;
-    color: white;
-}
-.bloco-not{
-    position: absolute;
-    top: 7%;
-    right: 8%;
-    width: 200px;
-    height: 150px;
-    background-color: rgba(24, 24, 24, 0.913);
-    border-radius: 10px;
-    display: none;
-}
-.top-notifica{
-    color: white;
-}
-.mensa{
-    padding: 5px;
-    height: 40px;
-    background-color: rgba(128, 128, 128, 0.521);
-    margin: 5px;
-    font-size: 10px;
-    text-align: start;
-    border-radius: 10px;
-}
-.configurar{ 
-    position: absolute;
-    width: 150px;
-    height: 120px;
-    top:10%;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-    display: none;
-   
-}
-.configs{
-    font-size: 12px !important;
-    display: flex;
-    margin: 10px;
-    align-items: flex-end;
-    justify-content: space-between;
-    color: darkgray;
-}
-.sair:hover{
-    cursor: pointer;
-}
-/* ------  */
 .usuario{
-    margin-right: 4%;
     display: flex;
+    margin-right: 3%;
     align-items: center;
-    justify-content: center;
 }
 .usuario i{
-    margin-right: 15px;
-    font-size: 20px ;
-    color: darkgray;
+    color:#afb3b2;
 }
-.foto-perfil{
-    border-radius: 50%;
+.btn-icon-2{
+    margin: 0px 20px;
 }
-.but-not{
-    background-color: orange;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    font-size: 10px !important;
+#img-perfil{
+    border-radius:50%;
 }
-.conteudo{
-    padding: 10px;
 
-}
-.caixas{
-    display: flex;
-    flex-direction: row;
-}
-.caixa{
-    width: 33%;
-    background-color: rgb(255, 255, 255);
+/* sub conteudo 1 */
+.boxes{
+    width: 33.3%;
     padding: 10px;
+    background-color: #ffffff;
     margin: 10px;
-    border-radius: 10px;
 }
-.caixa1{
+.boxes h2{
+    font-weight: 400;
+}
+.boxes h3{
+    font-size: 30px !important;
+    font-weight: 400;
+}
+/*sub conteudo 2*/
+.boxes-2{
     width: 25%;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     padding: 10px;
-    margin: 10px 20px;
-    border-radius: 10px;
+    margin: 0px 10px;
 }
-.caixas2{
+.boxes-2 h2{
+    font-weight: 400;
+    font-size: 17px;
+}
+.sub-box-1{
+    margin-top: 30px;
+}
+.sub.box-1 p{
+    font-size: 12px;
+}
+.sub-box-box{
+    margin-left: 30px;
+}
+.sub-box-2{
+    margin-top: 30px;
     display: flex;
+    border-top: 1px solid #eeeeee;
+    align-items: center;
 }
-.caixas2 h2{
-    font-size: 15px;
-}
-.caixas2 p{
-    font-size: 11px;
-    margin: 5px
-}
-.sub-caixa{
-    border-top:1px solid black;
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-.subt2 p{
+.sub-t2 p{
+    font-size: 12px;
     color: red;
 }
-/* CAIXA BLOCOS*/
-
-.caixas3{
-    display: flex;
-    margin-bottom: 5%;
+.sub-t2{
+    margin-left: 60px;
 }
-.bloco1{
+
+/*sub conteudo 3*/
+
+.bloco-1{
     width: 50%;
-    background-color: white;
-    margin: 5px 20px;
-    padding: 10px;
+    margin: 0px 30px;
+    background-color: #ffffff;
+    margin: 10px;
 }
 .head-bloco{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 10px;
-}
-.head-bloco h2{
-    color: darkgray;
-    font-size: 15px;
-    margin-bottom: 10px;
-    
+    margin: 20px;
 }
 .linhas{
+    border-top: 1px solid #eeeeee;
     display: flex;
-    justify-content: space-between;
+    padding:10px 25px;
     align-items: center;
-    font-size: 10px;
-    margin-bottom: 15px;
-    border-top: 1px solid black;
-    height: 37px;
+    justify-content:space-between;
 }
 .linhas h2{
-    font-size: 12px;
-}
-.sub-p{
-    margin-right: auto;
-    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 400;
 }
 .linhas button{
+    padding: 10px;
     border: none;
-    padding: 5px;
-    font-family: sans-serif;
-    border-radius: 5px;
     color: white;
-    height: 20px;
+    box-shadow: inset 0px -1px 2px 1px #b39999;
 }
-.butt-p{
-    font-size: 11px !important;
-} 
 .lin1{
     background-color: red;
 }
 .lin2{
-    background-color: yellow;
+    background-color: #efad4d;
 }
 .lin3{
     background-color: green;
 }
 .lin4{
-    background-color: grey;
+    background-color: #abb7c3;
+}
+.bloco-2{
+    width: 50%;
+    background-color: #ffffff;
+    margin: 10px;
 }
 
-.chart {
-    border: 3px solid royalblue;
-  }
-  .esquerda {
-    background-color: rgb(49, 49, 206);
-    width: 100px;
-    height: 100px;
-    left: auto;
-    position: absolute;
-  }
+.linhas-2{
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    padding: 10px 25px;
+    align-items: center;
+}
+.linhas-2 button{
+    padding: 10px;
+    border: none;
+    color: white;
+    box-shadow: inset 0px -1px 2px 1px #b39999;
+    margin-left:auto;
+}
+.linhas-2 p{
+    margin-left: 20px;
+}
+/*RESPOSIVIDADE*/
+
+@media (max-width:1290px){
+    .fa-bars{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 1%;
+        left: 1%;
+        font-size: 30px;
+    }
+    .bar-navegacao{
+        z-index: 2;
+        display: none;
+        position: relative;
+        width: 150px;
+    }
+    .lista-top{
+        margin-top: 20px !important;
+    }
+    .bar-navegacao .fa-times{
+        display: block;
+        font-size: 30px;
+        color: white;
+        margin-left: 70%;
+    }
+}
+@media (max-width:1130px){
+    .sub-conteudo-1{
+        flex-wrap: wrap;
+    }
+
+    .sub-conteudo-2{
+        flex-wrap: wrap;
+    }
+    .sub-conteudo-3{
+        flex-wrap: wrap;
+    }
+    .bloco-1{
+        height: 600px;
+    }
+}

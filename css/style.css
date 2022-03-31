@@ -8,7 +8,7 @@
     list-style: none;
 }
 body{
-    background-color: #e2e6e7;
+    background-color: #3ac6e9;
     font-family: 'Poppins', sans-serif;
 }
 .geral{
@@ -36,7 +36,7 @@ body{
 
 .bar-navegacao{
     width: 3%;
-    background-color: #354052;
+    background-color: #145acd;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -141,7 +141,7 @@ body{
 .sub-box-2{
     margin-top: 30px;
     display: flex;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #ca1717;
     align-items: center;
 }
 .sub-t2 p{
